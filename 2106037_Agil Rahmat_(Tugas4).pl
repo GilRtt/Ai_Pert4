@@ -15,7 +15,7 @@ is_ayah(X,Y) :- ayah(X,Y).
 is_ibu(X,Y) :- ibu(X,Y).
 is_anak(Y,X) :- ayah(X,Y);ibu(X,Y).
 is_sodara(Y,Z) :- ayah(X,Y),ayah(X,Z);ibu(X,Y),ibu(X,Z).
-is_kakek(X,Z) :- ayah(X,Y),is_ayah(Y,Z).
+
 
 
 
